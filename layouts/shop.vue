@@ -4,7 +4,7 @@
   <nav class="bg-slate-50 shadow-sm">
     <div class="container mx-auto max-w-6xl flex justify-between p-5">
       <div>
-        <NuxtLink class="pr-6" to="/shop">Shop</NuxtLink>
+        <NuxtLink to="/shop">Shop</NuxtLink>
       </div>
       <NuxtLink to="#"><i class="material-icons">shopping_bag</i></NuxtLink>
     </div>

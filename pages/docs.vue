@@ -2,8 +2,6 @@
 //---------------------
 // Reusable interfaces
 //---------------------
-import type { StringSubtype } from "openapi-typescript";
-
 interface hasQuantity {
   quantity: number;
 }
@@ -50,13 +48,6 @@ interface Bill extends HasFormatter {
   server: string;
 }
 
-const User = {
-  id: 1,
-  format(): string {
-    return `This user has the id of ${this.id}`;
-  },
-};
-
 const bill = {
   id: 2,
   amount: 50,
@@ -99,10 +90,10 @@ const personOne = {
 const personTwo = {
   id: "2",
   firstName: "Luigi",
-  email: "luigi@gmail.com",
+  email: "luigi@dev.com",
 };
 const personThree = {
-  email: "peach@gmail.com",
+  email: "peach@dev.com",
 };
 
 function printUser(user: User) {
@@ -272,6 +263,8 @@ console.log("Generics\n", "Load all - ", users.loadAll());
       <li><NuxtLink to="#type-guards">Type guards</NuxtLink></li>
       <li><NuxtLink to="#classes">Classes</NuxtLink></li>
       <li><NuxtLink to="#generics">Generics</NuxtLink></li>
+      <li><NuxtLink to="#sets">Sets</NuxtLink></li>
+      <li><NuxtLink to="#enums">Enums</NuxtLink></li>
     </ul>
 
     <!-- Inference -->
@@ -345,7 +338,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           </p>
           <p><span class="pr-6 text-slate-400">3</span>&nbsp;</p>
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400">4</span>names.push('bowser')
+            <span class="pr-6 text-slate-400">4</span>names.push('Peach')
           </p>
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">5</span>ages.push(3):
@@ -401,7 +394,6 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">5</span>user.firstName = '25'
-            <span class="pl-2 text-green-400 italic">no error</span>
           </p>
         </div>
 
@@ -411,7 +403,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
             <span class="pr-6 text-slate-400">1</span>let person: { name:
             'Mario', score: 30 }
             <span class="pl-2 text-green-400 italic"
-              >let person: {name: string; score: number;}</span
+              >let person: {name: string score: number;}</span
             >
           </p>
         </div>
@@ -528,8 +520,8 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">6</span>
             <span class="text-green-400 italic"
-              >Useful when migrating from js to ts because using any won't cause
-              errors initially</span
+              >Useful when migrating from js to ts because using 'any' won't
+              cause errors initially</span
             >
           </p>
         </div>
@@ -786,7 +778,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
             <span class="pr-6 text-slate-400">7</span>shapeOne.calcArea(3)
           </p>
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400">7</span>shapeTwo.calcArea(10)
+            <span class="pr-6 text-slate-400">8</span>shapeTwo.calcArea(10)
           </p>
         </div>
       </div>
@@ -838,7 +830,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           </p>
           <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400" style="'text-indent: 40px'"
+            <span class="pr-6 text-slate-400" style="text-indent: 40px"
               >5</span
             >function formatUser(user: User): void { console.log(`${user.name}
             has a score of ${user.score}`) }
@@ -865,17 +857,17 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           </p>
           <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400" style="'text-indent: 40px'"
+            <span class="pr-6 text-slate-400" style="text-indent: 40px"
               >5</span
             >const personOne = { id: 1, firstName: "Mario", };
           </p>
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">7</span>const personTwo = { id:
-            "2", firstName: "Luigi", email: "luigi@gmail.com", };
+            "2", firstName: "Luigi", email: "luigi@dev.com", };
           </p>
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">8</span>const personThree = {
-            email: "peach@gmail.com", };
+            email: "peach@dev.com", };
           </p>
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">9</span>function printUser(user:
@@ -889,7 +881,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           <p class="text-slate-50 indent">
             <span class="pr-6 text-slate-400">12</span>printUser(personTwo);
             <span class="pl-2 text-green-400 italic"
-              >2 Luigi luigi@gmail.com</span
+              >2 Luigi luigi@dev.com</span
             >
           </p>
           <p class="text-slate-50 indent">
@@ -1169,13 +1161,113 @@ console.log("Generics\n", "Load all - ", users.loadAll());
             <span class="pl-2 text-green-400 italic">Luigi, 35</span>
           </p>
         </div>
+      </div>
+      <hr />
+    </div>
 
-        <p class="text-slate-700 pb-2">Generic classes</p>
+    <!-- Sets -->
+    <div class="pb-10">
+      <div class="pb-6">
+        <h3 class="text-2xl mb-2 text-slate-800" id="sets">Sets</h3>
+        <p class="text-slate-700 pb-2">Sets in typescript</p>
         <div class="bg-gray-700 rounded p-4 mb-6 font-mono">
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400">1</span>
+            <span class="pr-6 text-slate-400">1</span>const names = new
+            Set&lt;string&gt;()
           </p>
           <p><span class="pr-6 text-slate-400">2</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">3</span>names.add('Mario')
+            names.add('Luigi') names.add('Peach') names.add('Mario')
+          </p>
+          <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">5</span>console.log(names)
+            <span class="pl-2 text-green-400 italic"
+              >{ 'Mario', 'Luigi', 'Peach'}</span
+            >
+          </p>
+        </div>
+
+        <p class="text-slate-700 pb-2">Sets with custom types</p>
+        <div class="bg-gray-700 rounded p-4 mb-6 font-mono">
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">1</span>interface User { email:
+            string score: number }
+          </p>
+          <p><span class="pr-6 text-slate-400">2</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">3</span>const user1: User = {
+            email: 'mario@dev.com', score: 1 } user2: User = { email:
+            'luigi@dev.com', score: 2 }
+          </p>
+          <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">5</span>const users = new
+            Set&lt;User&gt;()
+          </p>
+          <p><span class="pr-6 text-slate-400">6</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">7</span>users.add(user1)
+          </p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">8</span>users.add(user2)
+          </p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">9</span>users.add(user1)
+          </p>
+          <p><span class="pr-6 text-slate-400">10</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">11</span>console.log(users)
+            <span class="pl-2 text-green-400 italic"
+              >{ email: 'mario@dev.com', score 1 }, { email: 'luigi@dev.com',
+              score 2 },</span
+            >
+          </p>
+        </div>
+
+        <p class="text-slate-700 pb-2">Sets as function arguments</p>
+        <div class="bg-gray-700 rounded p-4 mb-6 font-mono">
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">1</span>function
+            logUserEmails(users: Set&lt;User&gt;): void { users.forEach{ (user)
+            => console.log(user.email) } }
+          </p>
+          <p><span class="pr-6 text-slate-400">2</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">3</span>
+            <span class="pl-2 text-green-400 italic"
+              >mario@dev.com luigi@dev.com</span
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!-- Enums -->
+    <div class="pb-10">
+      <div class="pb-6">
+        <h3 class="text-2xl mb-2 text-slate-800" id="enums">Enums</h3>
+        <div class="bg-gray-700 rounded p-4 font-mono">
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">1</span>enum Priority { Lowest = 0
+            Medium = 1 High = 2 Urgent = 3 }
+          </p>
+          <p><span class="pr-6 text-slate-400">2</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">3</span>function
+            addTicket(details: string, priority: Priority) { if (priority ===
+            Priority.Lowest) { ... } ... }
+          </p>
+          <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
+          <p class="text-slate-50 indent">
+            <span class="pr-6 text-slate-400">5</span>addTicket('fix computer',
+            Priority.Urgent)
+            <span class="pl-2 text-green-400 italic"
+              >Will also accept a number from Priority</span
+            >
+          </p>
         </div>
       </div>
       <hr />
