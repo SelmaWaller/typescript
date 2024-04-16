@@ -7,7 +7,7 @@
         <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/"
           >Masterclass</NuxtLink
         >
-        <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/docs"
+        <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/ts-docs"
           >Typescript docs</NuxtLink
         >
       </div>
