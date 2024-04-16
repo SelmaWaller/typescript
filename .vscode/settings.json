@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "vs-code-prettier-eslint.prettierLast": true,
+    "editor.defaultFoldingRangeProvider": "rvest.vs-code-prettier-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

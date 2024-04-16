@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-100
+  @apply bg-slate-100;
+}
+
+@layer components {
+  .btn {
+    @apply rounded bg-orange-400 py-2 px-4 text-slate-900;
+  }
+
+  .card {
+    @apply p-3 rounded-md bg-white shadow-sm h-full;
+  }
 }

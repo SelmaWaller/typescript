@@ -237,34 +237,99 @@ console.log("Generics\n", "Load one - ", users.loadOne());
 console.log("Generics\n", "Load all - ", users.loadAll());
 </script>
 
+<style lang="scss" scoped>
+.router-link {
+  border: 1px solid rgba(182, 194, 203, 0);
+  &:hover {
+    border: 1px solid rgba(182, 194, 203, 0.5);
+    background: rgba(228, 237, 244, 0.5);
+  }
+}
+</style>
+
 <template>
   <div>
-    <h2 class="text-3xl my-6 text-slate-900">Docs</h2>
+    <h2 class="text-3xl my-6 text-slate-900">Typescript docs</h2>
 
+    <!-- side menu -->
     <ul class="mb-7">
-      <li><NuxtLink to="#inference">Inference</NuxtLink></li>
-      <li>
-        <NuxtLink to="#null-and-undefined">Null & Undefined</NuxtLink>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#inference"
+          >Inference</NuxtLink
+        >
       </li>
-      <li>
-        <NuxtLink to="#arrays-and-object-literals"
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#null-and-undefined"
+          >Null & Undefined</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink
+          class="py-1 px-2 router-link rounded"
+          to="#arrays-and-object-literals"
           >Arrays & Object literals</NuxtLink
         >
       </li>
-      <li><NuxtLink to="#functions">Functions</NuxtLink></li>
-      <li><NuxtLink to="#any">Any</NuxtLink></li>
-      <li><NuxtLink to="#tuples">Tuples</NuxtLink></li>
-      <li><NuxtLink to="#interfaces">Interfaces</NuxtLink></li>
-      <li>
-        <NuxtLink to="#function-signatures">Function signatures</NuxtLink>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#functions"
+          >Functions</NuxtLink
+        >
       </li>
-      <li><NuxtLink to="#type-aliases">Type aliases</NuxtLink></li>
-      <li><NuxtLink to="#union-types">Union types</NuxtLink></li>
-      <li><NuxtLink to="#type-guards">Type guards</NuxtLink></li>
-      <li><NuxtLink to="#classes">Classes</NuxtLink></li>
-      <li><NuxtLink to="#generics">Generics</NuxtLink></li>
-      <li><NuxtLink to="#sets">Sets</NuxtLink></li>
-      <li><NuxtLink to="#enums">Enums</NuxtLink></li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#any">Any</NuxtLink>
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#tuples"
+          >Tuples</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#interfaces"
+          >Interfaces</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink
+          class="py-1 px-2 router-link rounded"
+          to="#function-signatures"
+          >Function signatures</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#type-aliases"
+          >Type aliases</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#union-types"
+          >Union types</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#type-guards"
+          >Type guards</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#classes"
+          >Classes</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#generics"
+          >Generics</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#sets"
+          >Sets</NuxtLink
+        >
+      </li>
+      <li class="my-2">
+        <NuxtLink class="py-1 px-2 router-link rounded" to="#enums"
+          >Enums</NuxtLink
+        >
+      </li>
     </ul>
 
     <!-- Inference -->
@@ -830,8 +895,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           </p>
           <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400" style="text-indent: 40px"
-              >5</span
+            <span class="pr-6 text-slate-400" style="text-indent: 40px">5</span
             >function formatUser(user: User): void { console.log(`${user.name}
             has a score of ${user.score}`) }
           </p>
@@ -857,8 +921,7 @@ console.log("Generics\n", "Load all - ", users.loadAll());
           </p>
           <p><span class="pr-6 text-slate-400">4</span>&nbsp;</p>
           <p class="text-slate-50 indent">
-            <span class="pr-6 text-slate-400" style="text-indent: 40px"
-              >5</span
+            <span class="pr-6 text-slate-400" style="text-indent: 40px">5</span
             >const personOne = { id: 1, firstName: "Mario", };
           </p>
           <p class="text-slate-50 indent">
