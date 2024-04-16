@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h2 class="text-3xl my-6 text-slate-900">TypeScript Masterclass</h2>
+    <h2 class="text-3xl my-6 text-slate-900">Masterclass</h2>
     <!--implement pinia tasks-->
   </div>
 </template>
