@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "name": "Arrays & Object literals",
+      "id": "arrays-and-object-literals"
+    },
+    {
+      "name": "Functions",
+      "id": "functions"
+    },
+    {
+      "name": "Any",
+      "id": "any"
+    },
+    {
+      "name": "Tuples",
+      "id": "tuples"
+    },
+    {
+      "name": "Interfaces",
+      "id": "interfaces"
+    },
+    {
+      "name": "Function signatures",
+      "id": "function-signatures"
+    },
+    {
+      "name": "Type aliases",
+      "id": "type-aliases"
+    },
+    {
+      "name": "Union types",
+      "id": "union types"
+    },
+    {
+      "name": "Type guards",
+      "id": "type-guards"
+    },
+    {
+      "name": "Classes",
+      "id": "classes"
+    },
+    {
+      "name": "Generics",
+      "id": "generics"
+    },
+    {
+      "name": "Sets",
+      "id": "sets"
+    },
+    {
+      "name": "Enums",
+      "id": "enums"
+    }
+  ]
+}

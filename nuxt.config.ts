@@ -1,7 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    // ...
+    "@pinia/nuxt",
+    "@nuxtjs/tailwindcss",
+  ],
   router: {
     options: {
       scrollBehaviorType: "smooth",
@@ -30,5 +34,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY,
+  },
+  devServer: {
+    port: 8080,
   },
 });

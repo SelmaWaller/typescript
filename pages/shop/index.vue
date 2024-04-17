@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ProductCard from "~/src/components/shop/ProductCard.vue";
+
 definePageMeta({
   layout: "shop",
 });

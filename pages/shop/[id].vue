@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ProductDetails from "~/src/components/shop/ProductDetails.vue";
+
 definePageMeta({
   layout: "shop",
 });
