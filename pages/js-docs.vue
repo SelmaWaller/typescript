@@ -1,15 +1,13 @@
 <script setup lang="ts">
-import Sidebar from "~/src/components/docs/Sidebar.vue";
+import DocsPage from "~/src/components/docs/DocsPage.vue";
 import JSDocs from "~/src/components/docs/JSDocs.vue";
+import items from "~/data/js-items.json";
 </script>
 
 <template>
-  <div class="gap-9 flex">
-    <Sidebar title="Javascript" />
-    <div class="my-6">
-      <JSDocs />
-    </div>
-  </div>
+  <DocsPage title="Javascript" :items="items.items">
+    <JSDocs />
+  </DocsPage>
 </template>
 
 <style scoped></style>

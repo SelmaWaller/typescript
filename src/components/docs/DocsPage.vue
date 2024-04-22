@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Sidebar from "./Sidebar.vue";
-
 const props = defineProps(["title", "items"]);
 </script>
 
@@ -12,3 +11,5 @@ const props = defineProps(["title", "items"]);
     </div>
   </div>
 </template>
+
+<style scoped></style>

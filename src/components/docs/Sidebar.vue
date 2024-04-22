@@ -1,15 +1,23 @@
 <script setup lang="ts">
 const props = defineProps(["title", "items"]);
 </script>
+
 <template>
   <div class="sidebar">
     <div class="sidebar__wrapper">
       <h2 class="text-3xl my-6 text-slate-900">{{ title }} docs</h2>
       <ul class="mb-7 col-2">
         <li v-for="item in items" class="my-2">
-          <NuxtLink class="py-1 px-2 router-link rounded" :to="`#${item.id}`">{{
+          <NuxtLink class="text-slate-900" :to="`#${item.id}`">{{
             item.name
           }}</NuxtLink>
+          <ul>
+            <li v-for="i in item.subItems" class="my-2 sidebar__sublinks">
+              <NuxtLink class="text-slate-600" :to="`#${i.id}`">{{
+                i.name
+              }}</NuxtLink>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -18,10 +26,21 @@ const props = defineProps(["title", "items"]);
 
 <style lang="scss" scoped>
 .sidebar {
-  width: 50%;
+  min-width: 270px;
   position: relative;
+  border-right: 1px solid rgba(182, 194, 203, 0.5);
+  margin-right: 20px;
+  position: relative;
+  a:hover {
+    color: rgb(39, 191, 103);
+  }
   &__wrapper {
-    position: fixed;
+    position: sticky;
+    top: 20px;
+  }
+  &__sublinks {
+    margin: 0;
+    padding: 0 0 0 10px;
   }
 }
 .router-link {

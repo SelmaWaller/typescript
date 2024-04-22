@@ -1,28 +1,96 @@
 {
   "items": [
     {
+      "name": "Inference",
+      "id": "inference"
+    },
+    {
+      "name": "Null & Undefined",
+      "id": "null-and-undefined"
+    },
+    {
       "name": "Arrays & Object literals",
-      "id": "arrays-and-object-literals"
+      "id": "arrays-and-object-literals",
+      "subItems": [
+        {
+          "name": "Type inference with arrays",
+          "id": "type-inference-with-arrays"
+        },
+        {
+          "name": "Object literals",
+          "id": "object-literals"
+        },
+        {
+          "name": "Type inference with object literals",
+          "id": "type-inference-with-object-literals"
+        }
+      ]
     },
     {
       "name": "Functions",
-      "id": "functions"
+      "id": "functions",
+      "subItems": [
+        {
+          "name": "Functions and type inference",
+          "id": "functions-and-type-inference"
+        },
+        {
+          "name": "Return type inference",
+          "id": "return-type-inference"
+        }
+      ]
     },
     {
       "name": "Any",
-      "id": "any"
+      "id": "any",
+      "subItems": [
+        {
+          "name": "Any type in arrays",
+          "id": "any-type-in-arrays"
+        },
+        {
+          "name": "Functions & any",
+          "id": "functions-and-any"
+        }
+      ]
     },
     {
       "name": "Tuples",
-      "id": "tuples"
+      "id": "tuples",
+      "subItems": [
+        {
+          "name": "Tuples examples",
+          "id": "tuples-examples"
+        },
+        {
+          "name": "Named tuples",
+          "id": "named-tuples"
+        }
+      ]
     },
     {
       "name": "Interfaces",
-      "id": "interfaces"
+      "id": "interfaces",
+      "subItems": [
+        {
+          "name": "Interfaces as function argument types",
+          "id": "interfaces-as-function-argument-types"
+        },
+        {
+          "name": "Interfaces with arrays",
+          "id": "interfaces-with-arrays"
+        }
+      ]
     },
     {
       "name": "Function signatures",
-      "id": "function-signatures"
+      "id": "function-signatures",
+      "subItems": [
+        {
+          "name": "Function signatures in interfaces",
+          "id": "function-signatures-in-interfaces"
+        }
+      ]
     },
     {
       "name": "Type aliases",
@@ -30,11 +98,23 @@
     },
     {
       "name": "Union types",
-      "id": "union types"
+      "id": "union-types",
+      "subItems": [
+        {
+          "name": "Union type pitfall",
+          "id": "union-type-pitfall"
+        }
+      ]
     },
     {
       "name": "Type guards",
-      "id": "type-guards"
+      "id": "type-guards",
+      "subItems": [
+        {
+          "name": "Tagged interfaces",
+          "id": "tagged-interfaces"
+        }
+      ]
     },
     {
       "name": "Classes",
@@ -42,11 +122,43 @@
     },
     {
       "name": "Generics",
-      "id": "generics"
+      "id": "generics",
+      "subItems": [
+        {
+          "name": "Example 1",
+          "id": "generics-example-1"
+        },
+        {
+          "name": "Example 2",
+          "id": "generics-example-2"
+        },
+        {
+          "name": "Intersection type with generics",
+          "id": "intersection-type-with-generics"
+        },
+        {
+          "name": "Generic interfaces",
+          "id": "generic-interfaces"
+        }
+      ]
     },
     {
       "name": "Sets",
-      "id": "sets"
+      "id": "sets",
+      "subItems": [
+        {
+          "name": "Sets in typescript",
+          "id": "sets-in-typescript"
+        },
+        {
+          "name": "Sets with custom types",
+          "id": "sets-with-custom-types"
+        },
+        {
+          "name": "Sets as function arguments",
+          "id": "sets-as-function-arguments"
+        }
+      ]
     },
     {
       "name": "Enums",

@@ -2,7 +2,7 @@
 
 <template>
   <header class="bg-slate-50 shadow-sm">
-    <nav class="container mx-auto max-w-6xl flex justify-between p-5">
+    <nav class="container mx-auto max-w-7xl flex justify-between p-5">
       <div>
         <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/shop"
           >Home</NuxtLink
@@ -17,7 +17,7 @@
     </nav>
   </header>
 
-  <div class="container mx-auto max-w-6xl p-5">
+  <div class="container mx-auto max-w-7xl p-5">
     <slot />
   </div>
 

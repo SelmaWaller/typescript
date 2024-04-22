@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "name": "Control Flow Basics",
+      "id": "control-flow-basics",
+      "subItems": [
+        {
+          "name": "For loops",
+          "id": "for-loops"
+        },
+        {
+          "name": "While loops",
+          "id": "while-loops"
+        },
+        {
+          "name": "Do while loops",
+          "id": "do-while-loops"
+        },
+        {
+          "name": "If & else statements",
+          "id": "if-and-else-statements"
+        },
+        {
+          "name": "Logical operators",
+          "id": "logical-operators"
+        },
+        {
+          "name": "Break & continue",
+          "id": "break-and-continue"
+        },
+        {
+          "name": "Switch statement",
+          "id": "switch-statement"
+        },
+        {
+          "name": "Block scope",
+          "id": "block-scope"
+        }
+      ]
+    },
+    {
+      "name": "Functions & Methods",
+      "id": "functions-and-methods",
+      "subItems": [
+        {
+          "name": "Function declarations & Expressions",
+          "id": "function-declarations-and-expressions"
+        },
+        {
+          "name": "Arguments & parameters",
+          "id": "arguments-and-parameters"
+        },
+        {
+          "name": "Returning values",
+          "id": "returning-values"
+        },
+        {
+          "name": "Arrow functions",
+          "id": "arrow-functions"
+        },
+        {
+          "name": "Functions vs methods",
+          "id": "functions-vs-methods"
+        },
+        {
+          "name": "Callback functions & forEach",
+          "id": "callback-functions-and-foreach"
+        }
+      ]
+    }
+  ]
+}
