@@ -65,6 +65,54 @@
         {
           "name": "Callback functions & forEach",
           "id": "callback-functions-and-foreach"
+        },
+        {
+          "name": "Callback functions in action",
+          "id": "callback-functions-in-action"
+        }
+      ]
+    },
+    {
+      "name": "Object Literals",
+      "id": "object-literals",
+      "subItems": [
+        {
+          "name": "Creating an object",
+          "id": "creating-an-object"
+        },
+        {
+          "name": "adding methods",
+          "id": "adding-methods"
+        },
+        {
+          "name": "'this' keyword",
+          "id": "this-keyword"
+        },
+        {
+          "name": "Objects in arrays",
+          "id": "objects-in-arrays"
+        },
+        {
+          "name": "Math object",
+          "id": "math-object"
+        },
+        {
+          "name": "primitive values",
+          "id": "primitive-values"
+        },
+        {
+          "name": "Reference values",
+          "id": "reference-values"
+        }
+      ]
+    },
+    {
+      "name": "The Document Object Model",
+      "id": "the-document-object-model",
+      "subItems": [
+        {
+          "name": "The query selector",
+          "id": "the-query-selector"
         }
       ]
     }
