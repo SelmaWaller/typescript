@@ -1,0 +1,51 @@
+// Colors
+$primary: #1ce1ff;
+$secondary: #ff8400;
+$error: #ff003c;
+$info: #0080ff;
+
+// Spacing
+$padding-base: 4px;
+$margin-base: 4px;
+
+// Borders
+$border-base: 1px;
+$border-thickness-base: 1px;
+$border-radius-base: 3px;
+
+.css-library {
+  h1 {
+    color: $primary;
+  }
+
+  a {
+    color: $secondary;
+  }
+
+  button {
+    color: white;
+    border: none;
+    background: $primary;
+    padding: $padding-base;
+    border-radius: $border-radius-base;
+  }
+
+  .notification {
+    padding: $padding-base;
+    border-radius: $border-radius-base;
+  }
+
+  .error {
+    color: $error;
+    border: solid 1px $error;
+    padding: $padding-base;
+    border-radius: $border-radius-base;
+  }
+
+  .info {
+    color: $info;
+    border: solid 1px $info;
+    padding: $padding-base;
+    border-radius: $border-radius-base;
+  }
+}

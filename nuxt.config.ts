@@ -1,3 +1,4 @@
+import VitePluginSassDts from "vite-plugin-sass-dts";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -38,4 +39,12 @@ export default defineNuxtConfig({
   devServer: {
     port: 8080,
   },
+  vite: {
+    plugins: [
+      VitePluginSassDts({
+        /* options */
+      }),
+    ],
+  },
+  css: ["~/assets/css/main.scss"],
 });

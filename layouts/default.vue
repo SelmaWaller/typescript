@@ -13,6 +13,9 @@
         <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/js-docs"
           >JS docs</NuxtLink
         >
+        <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/css-library"
+          >CSS library</NuxtLink
+        >
       </div>
       <NuxtLink class="py-1 px-2 rounded router-link" to="/shop">Shop</NuxtLink>
     </nav>

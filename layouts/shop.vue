@@ -30,6 +30,9 @@
         <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/ts-docs"
           >Typescript docs</NuxtLink
         >
+        <NuxtLink class="mr-6 py-1 px-2 rounded router-link" to="/css-library"
+          >CSS library</NuxtLink
+        >
       </div>
     </nav>
   </footer>
